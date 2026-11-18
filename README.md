@@ -5,3 +5,5 @@ P toggles the visual helper; F4 opens settings; both can be remapped in Controls
 **Important limitation:** Minecraft clients cannot reliably distinguish a real shield disable from voluntary shield lowering or lag without server-side support. This is a best-effort indicator, not confirmed shield-break detection. It does not switch items or automate attacks. Build has not been tested in this environment.
 
 Build with Java 21 and Gradle: `gradle build`. GitHub Actions workflow included. If dependency versions have changed, adjust `gradle.properties` to published Fabric versions for 1.21.11.
+
+V4: Axe outline disappears immediately on an airborne axe attack against the tracked player; cannot reactivate until landing. Mace cue remains a client-side heuristic.
